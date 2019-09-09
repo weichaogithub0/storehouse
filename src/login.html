@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <script src="js/login.js"></script>
+    <div id="top">
+        <div id="h-banner" class="container login-banner">
+            <div class="user-logo">
+                <a href="http://localhost/stage2-month2/New-carre/src/index.html">
+                    <img alt="" id="g_logo" class="login-logo"
+                        ng-src="https://empcos.carrefour.cn/ody/osc-web/1554691156031_86.59948320684384_63963acb-9cf3-4a4a-9ad8-5e48a3a9d61f.png"
+                        src="https://empcos.carrefour.cn/ody/osc-web/1554691156031_86.59948320684384_63963acb-9cf3-4a4a-9ad8-5e48a3a9d61f.png">
+                </a>
+            </div>
+            <div class="user-title">
+                <div class="title1">欢迎光临家乐福</div>
+                <div class="title2">Welcome to Carrefour</div>
+            </div>
+            <div class="user-right">
+                <span class="toLogin-show ng-binding ng-scope" ng-if="!isLogin &amp;&amp; isEn != 'en_US'">还未有账号？<a
+                        href="http://localhost/stage2-month2/New-carre/src/register.html"
+                        class="ng-binding">免费注册</a></span>
+
+                <span class="cut-languge c3 ng-binding" ng-click="changLanguage()" id="user-right-s"
+                    style="font-size:16px">[EnglishSite]</span>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="wrapper">
+            <div class="form">
+                <div class="head"><span>手机快捷登录</span></div>
+                <div class="form-body">
+                    <!-- 手机号 -->
+                    <div class="phone-box">
+                        <input type="text" id="phone" placeholder="输入手机号">
+                    </div>
+                    <div class="phone-notice">
+                        请输入手机号
+                    </div>
+                    <!-- 验证码 -->
+                    <div class="yzm-box">
+                        <input type="text" class="yzm" placeholder="验证码"><b></b>
+                    </div>
+                    <div class="yzm-notice">
+                        请输入验证码
+                    </div>
+                    <!-- 记住用户名 -->
+                    <div class="rem-user">
+                        <span></span>记住用户名
+                    </div>
+                    <!-- 登录按钮 -->
+                    <div class="login-box">
+                        <input type="submit" class="sub" value="登录">
+                    </div>
+                    <!-- 登录须知 -->
+                    <div class="know">
+                        登录即代表您已经同意
+                        <span><a href="">《家乐福网上商城服务协议》</a></span>
+                        <span><a href="">《家乐福会员卡使用协议》</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

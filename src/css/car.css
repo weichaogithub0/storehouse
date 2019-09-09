@@ -1,0 +1,597 @@
+/* reset */
+body,
+p,
+form,
+fieldset,
+legend,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dt,
+dd,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    font: 14px "微软雅黑";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+em,
+i {
+    font-style: normal;
+}
+b,
+strong {
+    font-weight: normal;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+li {
+    list-style: none;
+}
+sup {
+    vertical-align: top;
+}
+sub {
+    vertical-align: bottom;
+}
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+/* top */
+.top{
+    position: relative;
+    height: 40px;
+    font-size: 12px;
+    background-color: #f8f8f8;
+    z-index: 200;
+    color: #333;
+    font-family: "PingFangSC-Regular", 'PingFangSC-Semibold', tahoma, arial, 'Hiragino Sans GB', "Microsoft YaHei", sans-serif;
+    margin-bottom:15px;
+}
+.wrapper{
+    width: 1200px;
+    
+    margin:0 auto;
+}
+.top .wrapper{
+    height:40px;
+}
+.wrapper .left li,.wrapper .right li{
+    float: left;
+}
+.wrapper .left li:nth-child(1){
+    
+    margin-right: 25px;
+    cursor: pointer;
+    line-height: 40px;
+}
+.wrapper .left li:nth-child(1) a{
+    color: #004ea2;
+}
+.wrapper .left li:nth-child(2){
+    max-width: 300px;
+    display: inline-block;
+    padding-left: 13px;
+    padding-right: 20px;
+    cursor: pointer;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 40px;    
+}
+
+.wrapper .left li:nth-child(2) a{
+    color: #004ea2;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.wrapper .right li a{
+    color:#333333;
+}
+.wrapper .right li:nth-child(1){
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    padding: 0 9px;
+    line-height: 40px;    
+
+}
+.wrapper .right{
+    box-sizing: border-box;
+}
+.wrapper .right li:nth-child(2){
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    margin-right: 51px;
+    line-height: 40px;    
+}
+.wrapper .right li:nth-child(1) a,.wrapper .right li:nth-child(2) a{
+    color: #004ea2;
+    position: relative;
+}
+.wrapper .right li:nth-child(3),
+.wrapper .right li:nth-child(4),
+.wrapper .right li:nth-child(5),
+.wrapper .right li:nth-child(6),
+.wrapper .right li:nth-child(7){
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    padding: 0 9px;
+    line-height: 40px;   
+    cursor: pointer; 
+}
+.wrapper .right li:nth-child(3) a:hover,
+.wrapper .right li:nth-child(4) a:hover,
+.wrapper .right li:nth-child(5) a:hover,
+.wrapper .right li:nth-child(6) a:hover{
+    text-decoration: underline;
+}
+.wrapper .right li:nth-child(1) a:hover::after,.wrapper .right li:nth-child(2) a:hover::after{
+    content: '';
+    display: block;
+    width:36px;
+    height:1px;
+    background:#004ea2;
+    position: absolute;
+    top:14px;
+    left:6px;
+}
+
+.wrapper .right li:nth-child(7) a:hover{
+    text-decoration:none;
+    color:#004ea2;
+}
+
+/* banner */
+.banner{
+    height:160px;
+    
+}
+.banner .wrapper{
+    position: relative;
+}
+.banner .logo{
+    margin-top: 27px;
+    width:357px;
+}
+.banner .logo img{
+    width:314px;
+}
+.banner .search{
+    height: 96px;
+    width: 440px;
+    float: left;
+    margin-top: 56px;
+    margin-left: 3px;
+}
+.banner input{
+    width: 488px;
+    height: 46px;
+    border-bottom-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border: 2px solid #004ea2;
+    padding: 0px 0px 0px 47px;
+    float: left;
+    border-radius: 2px 0 0 2px;
+    font-size: 16px;
+    border-right: none;
+    color: #333;
+    outline: none;
+    line-height: normal;
+}
+.banner button{
+    position: absolute;
+    height: 50px;
+    width: 125px;
+    background: #db3832;
+    color: #fff;
+    border: 2px solid #db3832;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 0px 2px 2px 0;
+    right: 178px;
+    outline: none;
+    cursor: pointer;
+}
+.banner p{
+    margin: 6px 0px;
+    color: #999;
+    position: absolute;
+    top:105px;
+    left:360px;
+}
+.banner p a{
+    margin-left:14px;
+    color:#333333;
+    font-size:13px;
+}
+.banner p a:nth-child(1){
+    color: rgb(219, 56, 50);
+}
+.banner p a:hover{
+    text-decoration:underline;
+}
+.banner .shopcar{
+    position: absolute;
+    right: 0;
+    top: 56px;
+    height: 50px;
+    cursor: pointer;
+}
+.banner .shopcar span{
+    font-weight: bold;
+    display: block;
+    width: 160px;
+    height: 46px;
+    line-height: 46px;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff;
+    color:#333333;
+}
+.banner .shopcar i{
+    position: absolute;
+    left: 104px;
+    top: 5px;
+    background: #ed1b23;
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 16px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 20px;
+    min-width: 35px;
+}
+/* main */
+main{
+    width:1200px;
+    margin:0 auto;
+    margin-top:60px;
+}
+main h2{
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+main .car-head{
+    width: auto;
+    height: 40px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    color: #333;
+}
+main .car-head input{
+    float: left;
+    margin:14px 15px 0px 33px;
+    width: 14px;
+    height: 14px;
+
+}
+main .car-head span:nth-child(2){
+    display: block;
+    width: 45px;
+    line-height: 40px;
+    float:left;
+}
+main .car-head span:nth-child(3){
+    width: 397px;
+    display: block;
+    line-height: 40px;
+    float:left;
+}
+main .car-head span:nth-child(4),main .car-head span:nth-child(5),main .car-head span:nth-child(6),main .car-head span:nth-child(7),
+main .car-head span:nth-child(8){
+    width: 135px;
+    display: block;
+    line-height: 40px;
+    float:left;
+    text-align: center;
+}
+/* goods_list */
+main .list{
+    width:1200px;
+    border-bottom: 1px solid #242424;
+}
+.clone{
+    display: none;
+}
+.checked::after{
+    content:'';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url(https://www.carrefour.cn/images/addrCheck1.png) no-repeat;
+}
+b{
+    border:1px solid #ccc;
+}
+.list li input:nth-child(1){
+    display: inline-block;
+    margin:60px 15px 0px 5px;
+    width:14px;
+    height:14px;
+}
+.list li .img{
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width:84px;
+    margin-right: 20px;
+}
+.list li .img img{
+    width: 84px;
+}
+.list li .infor{
+    display: inline-block;
+    vertical-align: top;
+    width:346px;
+    margin:15px 0px 24px;
+    position: relative;
+}
+.list li .infor::after{
+    content: '';
+    display: block;
+    width:20px;
+    height:20px;
+    position: absolute;
+    top:40px;
+    left:0px;
+    background: url(https://www.carrefour.cn/images/company/sprites.png) no-repeat -20px -438px;
+}
+.list li .price{
+    display: inline-block;
+    padding-top: 15px;
+    width: 135px;
+    text-align: center;
+    vertical-align: top;
+}
+.list li .num{
+    width: 36px;
+    height: 26px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #eee;
+    font-family: "宋体";
+    font-size: 16px;
+    outline:none;
+    vertical-align: top;
+    margin-top:15px;
+}
+.list li .add{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    margin-left:22px;
+    outline:none;
+    cursor: pointer;
+    vertical-align: top;
+    margin-top:15px;
+}
+.list li .reduce{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    outline:none;
+    cursor: pointer;
+    vertical-align: top;
+    margin-top:15px;
+}
+.list li .aprice{
+    display: inline-block;
+    padding-left:14px;
+    padding-top: 15px;
+    width: 135px;
+    text-align: center;
+    color: #db3832;
+    font-weight:bold;
+    vertical-align: top;
+}
+.list li .weight{
+    display: inline-block;
+    padding-top: 15px;
+    width: 135px;
+    text-align: center;
+    font-weight:bold;
+    color:#333333;
+    vertical-align: top;
+}
+.list li .del{
+    display: inline-block;
+    padding-top: 15px;
+    width: 125px;
+    text-align: center;
+    color:#666666;
+    vertical-align: top;
+}
+.list li .del:hover{
+    color:#DB3832;
+    text-decoration:underline;
+    vertical-align: top;
+}
+/* bar */
+.bar{
+    width:1200px;
+    margin:0 auto;
+    margin-top: 44px;
+    margin-bottom:36px;
+    padding: 0 0 0 15px;
+    height: 264px;
+    border: 1px solid #eee;
+}
+/* bar左 */
+.bar-left{
+    float: left;
+}
+.b-l-t{
+    width:458px;
+    height:55px;
+    line-height:55px;
+}
+.b-l-t li{
+    height: 55px;
+    margin-right: 30px;
+    float: left;
+    line-height: 55px;
+}
+.b-l-t li:nth-child(1){
+    margin-right: 80px;
+    color:#333333;
+}
+.b-l-t li:nth-child(2) a{
+    color:#666666;
+}
+.b-l-t input{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right:16px;
+}
+.b-l-b{
+    margin-top: 40px;
+    margin-left: 32px;
+    width:490px;
+    height:76px;
+}
+.b-l-b li{
+    height: 38px;
+    font-size: 14px;
+    color: #666;
+}
+.b-l-b i{
+        display: inline-block;
+        width:20px;
+        height:20px;
+        background: url(https://www.carrefour.cn/images/company/sprites.png) no-repeat -140px -438px;
+        vertical-align: middle;
+}
+/* bar右 */
+.bar-right{
+    float: right;
+    margin-top: 32px;
+    font-size: 14px;
+    color: #666666;
+    width:343px;
+    height:200px;
+}
+.bar-right p{
+    width: auto;
+    float: left;
+    margin-right: 15px;
+}
+.bar-right p i{
+    color: #db3832;
+    font-weight:bold;
+}
+.bar-right ul{
+    float: right;
+    width: 214px;
+    margin-right: 20px;
+}
+.bar-right ul li{
+    width:214px;
+    height:40px;
+}
+.bar-right ul li span{
+    float: right;
+    color: #db3832;
+}
+.bar-right ul li:nth-child(3) span{
+    font-size: 18px;
+    font-weight:bold;
+}
+.bar-right ul li:nth-child(4) span{
+    color:#333333;
+    font-weight:bold;
+}
+.bar-right ul li:nth-child(5) button{
+    width: 100%;
+    height: 52px;
+    line-height: 55px;
+    font-weight: bold;
+    border-radius: 0;
+    color: #fff;
+    background-color: #cf2a24;
+    font-size: 18px;
+    display: inline-block;
+    outline:none;
+    border:0px;
+}
+/* empty */
+.empty{
+    width: 100%;
+    height:450px;
+    padding: 100px 0;
+    overflow: hidden;
+    text-align: center;
+    background:#ffffff;
+    position: absolute;
+    top:240px;
+    left:0px;
+    display: none;
+}
+.empty p{
+    font-size: 14px;
+    color: #666;
+}
+.empty img{
+    width: 60px;
+    height: 56px;
+}
+.empty a{
+    display: block;
+    width: 200px;
+    height: 48px;
+    line-height: 47px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: #db3832;
+    margin: 50px auto;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}

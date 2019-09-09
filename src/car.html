@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/car.css">
+</head>
+
+<body>
+    <!-- top -->
+    <div class="top">
+        <div class="wrapper">
+            <ul class="left">
+                <li><a href="#">【收藏本站】</a></li>
+                <li><span>西湖区<a href="#">【更换】</a></span></li>
+            </ul>
+            <ul class="right">
+                <li><a href="#">【登录】</a></li>
+                <li><a href="#">【注册】</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">我的家乐福</a></li>
+                <li><a href="#">客户服务</a></li>
+                <li><a href="#">移动端</a></li>
+                <li><a href="#">EnglishSite</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="banner">
+        <div class="wrapper">
+            <div class="logo left">
+                <a href="https://www.carrefour.cn/index.html"><img
+                        src="https://empcos.carrefour.cn/ody/osc-web/1554691148911_40.58472684815232_11786edd-638d-46a0-9616-7fbe2a82089a.png"
+                        alt=""></a>
+            </div>
+            <div class="search left">
+                <input type="text" placeholder="进口食品"><button>搜索</button>
+                <p><a href="">家优鲜</a>
+                    <a href="">中秋节</a>
+                    <a href="">休闲零食</a>
+                    <a href="">驱蚊</a>
+                    <a href="">风扇</a>
+                    <a href="">防晒</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- main  -->
+    <main>
+        <h2>我的购物车</h2>
+        <!-- list表头 -->
+        <div class="car-head">
+            <input checked="checked" class="cart-checkbox allsel" type="checkbox">
+            <span>全选</span>
+            <span>商品</span>
+            <span>单价</span>
+            <span>数量</span>
+            <span>合计</span>
+            <span>重量</span>
+            <span>操作</span>
+        </div>
+        <!-- list -->
+        <div class=".list-box">
+
+        
+        <ul class="list">
+            <li class="clone">
+                <input checked="checked"  class="cart-checkbox" type="checkbox">
+                <a href="" class="img"><img src="https://empcos.carrefour.cn/ody/back-product-web/1557246686631_80.25530886760657_40dab4c6-c0e3-4166-8451-f004d4d8fcbb.jpg"
+                    alt=""></a>
+                <a href="" class="infor">相宜本草光彩立现睡眠面膜（莹润亮泽）0克</a>
+                <span class="price">￥0.00</span>
+                <button class="add">+</button
+                ><input type="text" value="" class="num"
+                ><button class="reduce">-</button>
+                <span class="aprice">￥0.00</span>
+                <span class="weight">0g</span>
+                <a href="javascript:;" class="del">删除</a>
+            </li>
+        </ul>
+    </div>
+    </main>
+    <div class="bar">
+        <div class="bar-left">
+            <ul class="b-l-t">
+                <li>
+                    <input checked="checked"  class="cart-checkbox allsel" type="checkbox">
+                    <span>全选</span>
+                </li>
+                <li>
+                    <a href="javascript:;" id="del">删除选中商品</a>
+                </li>
+            </ul>
+            <ul class="b-l-b">
+                <li>还需购买57.50元,达成免运费条件 “全场满129元包邮（≤10kg）”</li>
+                <li>购物车中带有 <i></i> 标识的为不支持7天无理由退货商品</li>
+            </ul>
+        </div>
+        <div class="bar-right">
+            <p>已选商品<i> 0 件</i></p>
+            <ul class="all">
+                <li>商品金额：<span class="allprice">￥0.00</span></li>
+                <li>优惠：<span>￥0.00</span></li>
+                <li>优惠后商品金额：<span class="allprice">￥0.00</span></li>
+                <li>总重量：<span>0.00kg</span></li>
+                <li><button>去结算</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="empty">
+        <p>
+            <img src="https://www.carrefour.cn/images/mini-cart-null.png" alt="">购物车空空的，快去逛逛吧~
+        </p>
+        <a href="http://localhost/stage2-month2/New-carre/src/">去购物</a>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/cookie.js"></script>   
+    <script src="js/car.js"></script>
+</body>
+
+</html>

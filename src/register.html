@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div id="top">
+        <div id="h-banner" class="container login-banner">
+            <div class="user-logo">
+                <a href="http://localhost/stage2-month2/New-carre/src/index.html">
+                    <img alt="" id="g_logo" class="login-logo"
+                        ng-src="https://empcos.carrefour.cn/ody/osc-web/1554691156031_86.59948320684384_63963acb-9cf3-4a4a-9ad8-5e48a3a9d61f.png"
+                        src="https://empcos.carrefour.cn/ody/osc-web/1554691156031_86.59948320684384_63963acb-9cf3-4a4a-9ad8-5e48a3a9d61f.png">
+                </a>
+            </div>
+            <div class="user-title">
+                <div class="title1">欢迎光临家乐福</div>
+                <div class="title2">Welcome to Carrefour</div>
+            </div>
+            <div class="user-right">
+                <span class="toLogin-show ng-binding ng-scope" ng-if="!isLogin &amp;&amp; isEn != 'en_US'">我已经注册，马上<a
+                        href="http://localhost/stage2-month2/New-carre/src/login.html" target="_self"
+                        class="ng-binding">登录</a></span>
+
+                <span class="cut-languge c3 ng-binding" ng-click="changLanguage()" id="user-right-s"
+                    style="font-size:16px">[EnglishSite]</span>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+    <main>
+        <div class="wrapper">
+            <div class="top-title">
+                <span>手机注册</span>
+            </div>
+            <ul class="form">
+                <li><input type="text" class="phone" placeholder="输入手机号"><br>
+                    <span>手机号不能为空</span><br></li>
+                <li><input type="text" class="yzm" placeholder="验证码"><b></b><br>
+                    <span>验证码不能为空</span><br></li>
+                <li><input type="password" class="password" placeholder="设置密码"><br>
+                    <span>密码不能为空</span><br></li>
+                <li><input type="password" class="repassword" placeholder="确认密码"><br>
+                    <span>两次输入的密码不一致</span></li>
+                <li></li><button>立即注册</button></li>
+            </ul>
+        </div>
+        <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/cookie.js"></script>
+        <script src="js/register.js"></script>
+    </main>
+</body>
+</html>
